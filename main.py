@@ -9,7 +9,6 @@ from starlette.middleware.sessions import SessionMiddleware
 # FastAPI 인스턴스 생성
 app = FastAPI()
 app.add_middleware(SessionMiddleware, secret_key="your-secret-key")
-templates = Jinja2Templates(directory="templates")
 
 # 템플릿 디렉토리 설정
 templates = Jinja2Templates(directory="templates")
